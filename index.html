@@ -13,7 +13,13 @@
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
   />
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-image: url(assets/bg-texture.png);
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <div class="container nav_container">
@@ -220,8 +226,8 @@
     </div>
 </section>
 <!-- =============================END OF FAQS======================= -->
-
-<section class="container testimonials_container home-slider">
+<section>
+<div class="container testimonials_container mySwiper">
     <h2>Students testimonials</h2>
     <div class="swiper-wrapper">
         <article class="testimonial swiper-slide ">
@@ -233,7 +239,7 @@
                 <small>Student</small>
             </div>
             <div class="testimonial_body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sequi velit in odit, itaque amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum delectus tenetur voluptatum adipisci laboriosam corrupti?</p>
+                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem obcaecati optio fugit maiores minima nisi? adipisicing elit. Unde sequi velit in odit, itaque amet!</p>
             </div>
         </article>
         <article class="testimonial swiper-slide">
@@ -281,18 +287,84 @@
                 <small>Financist</small>
             </div>
             <div class="testimonial_body">
-                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, quasi atque natus temporibus dolor repellat. amet consectetur adipisicing elit. Unde sequi velit in odit, itaque amet!</p>
+                <p>Lorem ipsum dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, harum iure animi provident corporis atque.sit amet consectetur adipisicing elit. Unde sequi velit in odit, itaque amet!</p>
             </div>
         </article>
     </div>
+</div>
 </section>
 
 
+<!-- =====================FOOTER==================== -->
+<footer >
+    <div class="container footer_container">
+        <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>DEEVINE</h4></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ipsum!</p>
+        </div>
+        <div class="footer_2">
+            <h4>DiDi-links</h4>
+            <ul class="Didilinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer_3">
+            <h4>primary</h4>
+            <ul class="privacy">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#"></a>Terms and Conditions</li>
+                <li><a href="#">Refund Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+234 816 692 5491</p>
+                <p>enofuadivine@gmail.com</p>
+            </div>
+        
+        <ul class="footer_socials">
+            <li>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer_copyright">
+    <small>Copyright & Copy:DeeMedia</small>
+</div>
+</footer>
 
 
 
-
-
+<!-- <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 90,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    //   when window width is >=
+    breakpoints: {
+        600: {
+            slidesPerView: 2
+        }
+      }
+    });
+  </script> -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

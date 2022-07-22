@@ -21,21 +21,42 @@ faqs.forEach(faq => {
 
 
 // slider
-var swiper = new Swiper(".home-slider", {
-    slidesPerView: 3,
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
     spaceBetween: 30,
+    autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
+     //   when window width is >=
+    breakpoints: {
+      600: {
+          slidesPerView: 2
+      }
+    }
   });
 
-//   var swiper = new Swiper(".review-slider", {
-//     spaceBetween: 20,
-//     centeredSlides: true,
-//     autoplay: {
-//       delay: 7500,
-//       disableOnInteraction: false,
-//     },
-//     loop:true,
-//   });
+
+
+// nav meu
+const menu = document.querySelector('.nav_menu');
+const menuBtn = document.querySelector('#open-menu-btn');
+const closeBtn = document.querySelector('#close-menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  menu.style.display = "flex";
+  closeBtn.style.display = "inline-block";
+  menuBtn.style.display = 'none';
+})
+
+
+// close nav
+closeBtn.addEventListener('click', () => {
+  menu.style.display = "none";
+  closeBtn.style.display = "none";
+  menuBtn.style.display = 'inline-block';
+})
